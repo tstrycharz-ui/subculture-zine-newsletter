@@ -26,29 +26,56 @@
 <div style="min-height: 100vh; padding: 40px 20px 64px; background-color: #17140f; background-image: radial-gradient(ellipse at 50% 0%, #2b251c 0%, #17140f 62%); display: flex; justify-content: center; align-items: flex-start; overflow-x: auto; font-family: Archivo, sans-serif;">
   <div style="position: relative; width: 660px; flex: none; background-color: #f6ecdb; background-image: radial-gradient(ellipse at 18% 8%, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 55%), radial-gradient(ellipse at 88% 76%, rgba(190,166,120,0.28) 0%, rgba(190,166,120,0) 48%), url('assets/paper-cream-sm.jpg'); background-size: auto, auto, 900px auto; background-repeat: no-repeat, no-repeat, repeat; background-blend-mode: normal, normal, multiply; box-shadow: 0 30px 70px rgba(0,0,0,0.62), 0 2px 0 rgba(255,255,255,0.06); overflow: hidden;">
 
-    <!-- ============ EMAIL HEADER (1b photocopy strip) ============ -->
-    <div data-screen-label="Header" style="position: relative; overflow: hidden; background-color: #f6ecdb; background-image: url('assets/photocopy-sm.jpg'), url('assets/paper-cream-sm.jpg'); background-size: 660px auto, 900px auto; background-blend-mode: multiply, multiply;">
-      <div style="position: absolute; inset: 0; background: rgba(246,236,219,0.55); pointer-events: none;"></div>
-      <div style="position: relative; padding: 0 0 14px;">
-        <div style="position: relative; margin: -12px -22px 0 -16px; transform: rotate(-1.1deg);">
-          <img src="assets/tape-h1.png" alt="" style="position: absolute; top: 18px; right: 34px; width: 74px; height: auto; transform: rotate(-58deg); z-index: 3; opacity: 0.9; pointer-events: none;">
-          <div class="rip-b70" style="padding: 30px 46px 18px 44px; background-image: url('assets/paper-cream-2-sm.jpg'); background-size: 800px auto; filter: drop-shadow(0 6px 10px rgba(0,0,0,0.28));">
-            <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.28em; text-transform: uppercase; color: #6b5c46; mix-blend-mode: multiply;">The July newsletter</div>
-            <div style="display: flex; align-items: baseline; font-family: Anton, sans-serif; font-size: 122px; line-height: 0.82; letter-spacing: -0.02em; text-transform: uppercase; color: #241c14; margin: 6px 0 0 -3px; white-space: nowrap; mix-blend-mode: multiply;"><span>SUB</span><span style="position: relative; color: #cf4536;">CULT<canvas id="scribble" width="640" height="72" style="position: absolute; left: -6px; right: -8px; bottom: -30px; width: calc(100% + 14px); height: 36px; pointer-events: none; mix-blend-mode: multiply;"></canvas></span><span>URE</span></div>
-            <div style="display: flex; align-items: baseline; gap: 14px; margin-top: 18px;">
-              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; font-weight: 600; letter-spacing: 0.62em; text-transform: uppercase; color: #241c14; mix-blend-mode: multiply;">Group</span>
-              <span style="flex: 1; border-top: 2px solid #241c14; opacity: 0.7;"></span>
-              <span style="font-family: 'Special Elite', monospace; font-size: 13px; color: #6b5c46; mix-blend-mode: multiply;">West Palm Beach · Lake Worth Beach · Delray</span>
+    <!-- ============ COVER (1a dark panel) ============ -->
+    <div data-screen-label="Cover" style="position: relative; overflow: hidden; background-color: #1b1610; background-image: url('assets/photocopy-sm.jpg'); background-size: 700px auto; background-blend-mode: soft-light;">
+      <div style="position: absolute; inset: 0; background: rgba(27,22,16,0.82); pointer-events: none;"></div>
+      <div style="position: relative; padding: 16px 28px 0;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.24em; text-transform: uppercase; color: #b9a98c;">
+          <span>West Palm Beach · Lake Worth Beach · Delray</span>
+          <span style="color: #e8a33d; white-space: nowrap; flex: none;">Issue 01 · Oct 2026</span>
+        </div>
+        <div style="font-family: Anton, sans-serif; font-size: 134px; line-height: 0.8; letter-spacing: -0.025em; text-transform: uppercase; color: #f6ecdb; margin: 14px 0 0 -4px; white-space: nowrap;">SUB<span style="color: #cf4536;">CULT</span>URE</div>
+        <div style="display: flex; align-items: baseline; gap: 14px; margin-top: 10px;">
+          <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.6em; text-transform: uppercase; color: #f6ecdb;">The zine</span>
+          <span style="flex: 1; border-top: 2px solid #cf4536;"></span>
+          <span style="font-family: 'Special Elite', monospace; font-size: 13px; color: #b9a98c;">No. 01 · monthly</span>
+        </div>
+      </div>
+      <div style="position: relative; display: grid; grid-template-columns: minmax(0, 1fr) 372px; gap: 20px; padding: 22px 28px 46px; align-items: end;">
+        <div style="padding-bottom: 8px;">
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; color: #e8a33d;">Inside</div>
+          <div style="display: flex; flex-direction: column; gap: 9px; margin-top: 12px; font-family: 'Special Elite', monospace; font-size: 14px; line-height: 1.3; color: #f6ecdb;">
+            <span>Ultra Sunn, Las Rosas Miami, Oct 9</span>
+            <span>The Hacienda opens, 522 Clematis</span>
+            <span>Man Ray opens in Lake Worth Beach</span>
+            <span>Emo Disco DJ Battle, Nov 26</span>
+            <span>Howley&rsquo;s, since the 1950s</span>
+            <span>The Valt File #107</span>
+          </div>
+          <div style="display: inline-flex; flex-direction: column; align-items: center; justify-content: center; width: 86px; height: 86px; margin-top: 22px; border: 3px double #cf4536; border-radius: 50%; transform: rotate(-11deg); color: #cf4536; opacity: 0.9;">
+            <span style="font-family: Anton, sans-serif; font-size: 24px; line-height: 1; text-transform: uppercase;">Free</span>
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 8px; letter-spacing: 0.2em; text-transform: uppercase; margin-top: 3px;">take one</span>
+          </div>
+        </div>
+        <div style="position: relative; transform: rotate(-1.6deg); margin-bottom: -6px;">
+          <img src="assets/tape-h2.png" alt="" style="position: absolute; top: -13px; left: -18px; width: 82px; height: auto; transform: rotate(-31deg); z-index: 3; opacity: 0.9; pointer-events: none;">
+          <img src="assets/tape-h1.png" alt="" style="position: absolute; bottom: 44px; right: -22px; width: 66px; height: auto; transform: rotate(78deg); z-index: 3; opacity: 0.9; pointer-events: none;">
+          <div style="padding: 10px 10px 0; background-image: url('assets/paper-cream-2-sm.jpg'); background-size: cover; box-shadow: 0 12px 26px rgba(0,0,0,0.55);">
+            <img src="assets/manray-hero.jpg" alt="Man Ray, Lake Worth Beach: the Glass Tears mural on the building" style="display: block; width: 100%; aspect-ratio: 5 / 3.6; object-fit: cover; object-position: 22% 45%;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; padding: 6px 3px 10px;">
+              <span style="font-family: Caveat, cursive; font-size: 19px; color: #241c14;">Man Ray, Lake Worth Beach</span>
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: #cf4536;">On the cover</span>
             </div>
-            <div style="height: 30px; position: relative"><svg width="709" height="81" viewBox="0 0 709 81" preserveAspectRatio="none" style="position: absolute; left: -73px; top: 11px; width: 709px; height: 81px; overflow: visible; fill: none; stroke: #8a8378; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round"><path d="M113 14 L110 14 L104 14 L99 14 L84 14 L74 14 L41 14 L27 14 L19 14 L14 14 L11 14 L8 14 L6 14 L4 14 L2 14 L0 14 L0 16 L0 18 L0 20 L0 22 L0 25 L0 28 L0 32 L1 36 L2 40 L4 44 L6 49 L10 53 L15 58 L22 64 L29 67 L36 70 L47 72 L62 76 L79 78 L99 79 L122 80 L148 81 L177 81 L209 81 L244 81 L280 80 L317 78 L382 72 L402 71 L425 69 L451 66 L475 64 L491 63 L504 62 L519 61 L531 61 L542 60 L551 60 L559 60 L567 60 L572 60 L576 60 L581 60 L587 61 L592 61 L598 61 L603 61 L609 62 L614 62 L619 62 L624 62 L629 62 L634 62 L637 62 L641 62 L645 61 L648 60 L650 59 L652 58 L654 56 L655 55 L658 53 L660 51 L661 49 L661 47 L662 44 L662 42 L663 40 L664 38 L666 38 L669 39 L671 41 L673 44 L675 47 L676 49 L678 52 L679 54 L681 57 L682 59 L684 61 L686 61 L688 61 L690 61 L692 61 L694 59 L696 59 L698 57 L700 56 L702 54 L704 52 L706 51 L707 49 L709 48 L709 46 L709 43 L709 39 L709 37 L709 35 L709 33 L708 31 L707 29 L706 27 L704 25 L703 23 L701 20 L699 19 L696 18 L691 14 L688 13 L684 11 L675 7 L666 4 L661 3 L656 2 L653 1 L648 1 L644 0 L640 0 L637 0 L634 0 L631 0 L627 0 L623 0 L614 0 L609 1 L605 1 L600 2 L595 2 L591 2 L583 2 L580 2 L576 2 L571 2 L565 2 L559 2 L552 3 L546 3 L540 3 L534 3 L529 3 L523 3 L519 3 L515 3 L512 3 L508 3 L504 3 L500 3 L496 3 L493 3 L488 3 L484 3 L480 3 L477 3 L475 3 L470 3 L465 4 L463 4 L460 4 L457 4 L454 4 L451 4 L448 4 L444 5 L440 5 L436 6 L432 6 L428 7 L425 7 L423 7 L419 8 L415 8 L411 9 L407 10 L403 10 L399 11 L395 11 L392 11 L388 12 L384 12 L377 13 L374 14 L370 14 L366 15 L361 16 L357 17 L353 18 L349 18 L346 19 L343 19 L340 19 L337 20 L334 20 L332 20 L330 20 L327 20 L324 20 L321 20 L318 20 L314 20 L310 20 L306 20 L303 20 L299 20 L295 20 L288 20 L285 21 L281 21 L277 21 L272 21 L267 21 L262 21 L256 21 L250 21 L243 22 L238 22 L232 22 L227 23 L221 23 L217 23 L214 23 L209 23 L204 23 L199 23 L194 23 L188 23 L183 23 L179 23 L174 23 L170 23 L165 23 L158 23 L156 23 L152 23 L148 23 L145 23 L141 23 L138 23 L136 23 L132 23 L129 23 L127 23 L125 23 L123 23 L121 23 L118 23 L116 23 L114 23 L112 23 L110 22 L108 21 L106 21 L104 20 L102 20 L100 19 L98 19 L96 19 L94 19 L91 19 L89 18 L87 18 L85 18 L83 18 L81 18 L79 18 L77 18 L75 18 L73 18 L71 18 L69 18 L67 19 L65 19 L63 19 L61 19 L59 19 L57 19 L54 18 L51 17 L49 16 L47 16 L45 16 L43 15 L41 15 L39 15 L37 15 L35 15 L33 15 L31 15"></path></svg></div>
           </div>
         </div>
       </div>
     </div>
 
     <!-- ============ HERO ============ -->
-    <div data-screen-label="Hero" style="position: relative; margin: 26px -14px 0; padding: 30px 44px 34px; transform: rotate(0.6deg); background-image: url('assets/paper-cream-2-sm.jpg'); background-size: 800px auto; background-position: 20% 40%; box-shadow: 0 8px 22px rgba(0,0,0,0.26);">
-      <img src="assets/tape-h2.png" alt="" style="position: absolute; top: -12px; left: 36%; width: 84px; height: auto; transform: rotate(-3deg); z-index: 4; opacity: 0.9; pointer-events: none;">
+    <div data-screen-label="Hero" style="position: relative; margin: -46px -14px 0; z-index: 2;">
+      <!-- tape sits OUTSIDE the masked sheet so it straddles the tear instead of being clipped by the mask -->
+      <img src="assets/tape-h2.png" alt="" style="position: absolute; top: 26px; left: 30%; width: 84px; height: auto; transform: rotate(-3deg); z-index: 5; opacity: 0.9; pointer-events: none;">
+      <div class="rip-t60" style="position: relative; padding: 74px 44px 34px; transform: rotate(0.6deg); background-image: url('assets/paper-cream-2-sm.jpg'); background-size: 800px auto; background-position: 20% 40%; filter: drop-shadow(0 10px 18px rgba(0,0,0,0.34));">
       <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; color: #cf4536;">Headline show — presented by Heroes Live Entertainment</div>
       <div style="display: grid; grid-template-columns: 216px minmax(0, 1fr); gap: 26px; align-items: start; margin-top: 12px;">
         <div style="position: relative; transform: rotate(-2.4deg);">
@@ -91,6 +118,7 @@
             </div>
           </div>
         </div>
+      </div>
       </div>
     </div>
 
